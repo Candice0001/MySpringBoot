@@ -4,7 +4,7 @@ import os
 
 def readFile():
     print os.path.join(os.path.dirname(__file__),'test1.txt')
-    with open(os.path.join(os.path.dirname(__file__),'test1.txt').replace("\\","/"), 'r') as f:
+    with open(os.path.join(os.path.dirname(__file__),'test1.txt'), 'r') as f:
         data = f.read()
         print data
 
